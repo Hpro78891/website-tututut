@@ -1,0 +1,30 @@
+.header { 
+  height: 95vh;
+ background-image:linear-gradient(to right bottom,$color-header-first , $color-header-second),url(../1.jpg);
+  opacity: .9rem;
+  background-size: cover; 
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 500px, 0 100%);
+ 
+  &__logo-box {
+  position: absolute; 
+  top: 4rem;
+  left: 5rem; 
+}
+ 
+&__logo { 
+  height: 9.5rem;
+  opacity: 0.1;
+}
+
+&__logo:hover {
+  animation: moveInRight 1s ease-out; } 
+  &__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+}
+
+
